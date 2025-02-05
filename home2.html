@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+   
+   <section class="flex">
+      <a href="home.html" class="logo">Educa.</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Search courses..." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+         
+      </div>
+
+      <div class="profile">
+         <img src="pic-1.jpg" class="image" alt="">
+         <h3 class="name">Rishi</h3>
+         <p class="role">Student</p>
+         <a href="profile.html" class="btn">View profile</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">Login</a>
+            <a href="register.html" class="option-btn">Register</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="pic-1.jpg" class="image" alt="">
+      <h3 class="name">Rishi</h3>
+      <p class="role">Student</p>
+      <a href="profile.html" class="btn">View profile</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Home</span></a>
+      <a href="about.html"><i class="fas fa-question"></i><span>About</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>Courses</span></a>
+      <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>Teachers</span></a>
+      <a href="assignment.html"><i class="fas fa-file-alt"></i><span>Assignment</span></a>
+      <a href="contact.html"><i class="fas fa-headset"></i><span>Contact Us</span></a>
+   </nav>
+
+</div>
+
+<!-- Add the hero section
+<section class="hero">
+   <h1>Learn Waste Management</h1>
+   <p>Discover effective strategies for reducing, reusing, and recycling waste to create a more sustainable future.</p>
+   <a href="#" class="btn">Explore Courses</a>
+</section> -->
+
+<section class="home-grid">
+
+   <h1 class="heading">Quick Options</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3 class="title">Likes and Comments</h3>
+         <p class="likes">Total likes: <span>25</span></p>
+         <a href="#" class="inline-btn">View likes</a>
+         <p class="likes">Total comments: <span>12</span></p>
+         <a href="#" class="inline-btn">View comments</a>
+         <p class="likes">Saved playlists: <span>4</span></p>
+         <a href="#" class="inline-btn">View playlists</a>
+      </div>
+
+      <div class="box">
+         <h3 class="title">Top Categories</h3>
+         <div class="flex">
+            <a href="#"><i class="fas fa-trash-alt"></i><span>Waste Reduction and Minimization</span></a>
+            <a href="#"><i class="fas fa-sync-alt"></i><span>Reuse and Repurposing</span></a>
+            <a href="#"><i class="fas fa-leaf"></i><span>Recycling and Material Recovery</span></a>
+            <a href="#"><i class="fas fa-seedling"></i><span>Composting and Organic Waste Management</span></a>
+         </div>
+      </div>
+
+      <div class="box">
+         <h3 class="title">Popular Topics</h3>
+         <div class="flex">
+            <a href="#"><i class="fas fa-arrow-down"></i><span>Reduce</span></a>
+                <a href="#"><i class="fas fa-arrow-down"></i><span>Reduce</span></a>
+                <a href="#"><i class="fas fa-redo"></i><span>Reuse</span></a>
+                <a href="#"><i class="fas fa-recycle"></i><span>Recycle</span></a>
+                <a href="#"><i class="fas fa-fire"></i><span>Waste-to-Energy</span></a>
+             </div>
+          </div>
+    
+          <div class="box">
+             <h3 class="title">Become a Tutor</h3>
+             <p class="tutor">Are you passionate about environmental sustainability?
+              Do you want to learn how to effectively manage waste and contribute to a cleaner, greener future?</p>
+             <a href="teachers.html" class="inline-btn">Get started</a>
+          </div>
+    
+       </div>
+    
+    </section>
+    
+    <section class="courses">
+    
+       <h1 class="heading">Our Courses</h1>
+    
+       <div class="box-container">
+    
+          <!-- Courses boxes will be dynamically added here based on your data -->
+    
+       </div>
+    
+       <div class="more-btn">
+          <a href="courses.html" class="inline-option-btn">View all courses</a>
+       </div>
+    
+    </section>
+    
+    <footer class="footer">
+       &copy; All rights reserved!
+    </footer>
+    
+    <!-- Custom JavaScript file link -->
+    <script src="script.js"></script>
+    
+    </body>
+    </html>

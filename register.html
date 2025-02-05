@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style1.css">
+    <script>
+        function validate() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            // var address = document.getElementById('address').value;
+            var city = document.getElementById('city').value;
+            var state = document.getElementById('state').value;
+            var country = document.getElementById('country').value;
+            var pincode = document.getElementById('pincode').value;
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            var email = document.getElementById('email').value;
+            // var resume = document.getElementById('resume').value;
+
+            if (firstName === '') {
+                alert('Please fill this');
+                return false;
+            }
+            if (lastName === '') {
+                alert('Please fill this');
+                return false;
+            }
+            if (firstName === '') {
+                alert('Please fill this');
+                return false;
+            }
+            if (city === '') {
+                alert('Please fill this');
+                return false;
+            }
+            if (country === '') {
+                alert('Please fill this');
+                return false;
+            }
+            if (username === '') {
+                alert('Please fill this');
+                return false;
+            }
+            if (password === '') {
+                alert('Please fill this');
+                return false;
+            }
+
+            if (!/^\d{6}$/.test(pincode)) {
+                alert('Pincode must be in 6 digits.');
+                return false;
+            }
+            if (!/^[A-Za-z]{2}$/.test(state)) {
+                alert('State must be of two characters.');
+                return false;
+            }
+            if (!/^[a-zA-Z0-9._%+-]+@gmail.com$/.test(email)) {
+                alert('Email must be a Gmail address.');
+                return false;
+            }
+            if (!/^\d{2}[A-Za-z]{3}\d{4}$/.test(username)) {
+                alert('Register number must have eight characters with the specified format.');
+                return false;
+            }
+            alert('Form submitted successfully!');
+            return true;
+        }
+    </script>
+</head>
+
+<!-- <body>
+    <header class="header">
+
+        <section class="flex">
+
+            <a href="home.html" class="logo">Educa.</a>
+
+            <form action="search.html" method="post" class="search-form">
+                <input type="text" name="search_box" required placeholder="search courses..." maxlength="100">
+                <button type="submit" class="fas fa-search"></button>
+            </form>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="search-btn" class="fas fa-search"></div>
+                <div id="user-btn" class="fas fa-user"></div>
+                <div id="toggle-btn" class="fas fa-sun"></div>
+            </div>
+
+            <div class="profile">
+                <img src="pic-1.jpg" class="image" alt="">
+                <h3 class="name">Rishi</h3>
+                <p class="role">Student</p>
+                <a href="profile.html" class="btn">view profile</a>
+                <div class="flex-btn">
+                    <a href="login.html" class="option-btn">login</a>
+                    <a href="register.html" class="option-btn">register</a>
+                </div>
+            </div>
+
+        </section>
+
+    </header>
+
+    <div class="side-bar">
+
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div class="profile">
+            <img src="pic-1.jpg" class="image" alt="">
+            <h3 class="name">shaikh anas</h3>
+            <p class="role">studen</p>
+            <a href="profile.html" class="btn">view profile</a>
+        </div>
+
+        <nav class="navbar">
+            <a href="home1.html"><i class="fas fa-home"></i><span>home</span></a>
+            <a href="about.html"><i class="fas fa-question"></i><span>about</span></a>
+            <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+            <a href="teachers.html"><i class="fas fa-chalkboard-user"></i><span>teachers</span></a>
+            <a href="assignment.html"><i class="fas fa-file-alt"></i><span>Assignment</span></a>
+            <a href="contact.html"><i class="fas fa-headset"></i><span>contact us</span></a>
+        </nav>
+
+    </div> -->
+
+    <h2>Register Now</h2>
+    <form onsubmit="return validate()">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br>
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br>
+        <br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+        <br>
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required maxlength="2"><br>
+        <br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br>
+        <br>
+        <label for="pincode">Pincode:</label>
+        <input type="text" id="pincode" name="pincode" required><br>
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <br> 
+        <input type="submit" value="submit" name="submit" class="btn"> 
+    </form>
+</body>
+
+</html>

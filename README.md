@@ -20,4 +20,7 @@ A **modern, web-based learning platform** designed for students and professional
 
 - **HTML** – Structuring content and pages.  
 - **CSS** – Enhancing design with animations and responsive styling.  
-- **JavaScript** – Adding interactivity, quizzes, and progress tracking.  
+- **JavaScript** – Adding interactivity, quizzes, and progress tracking.
+
+  ![image](https://github.com/user-attachments/assets/5ec25929-2687-4c6b-989e-11a7d9bdfb58)
+ 

@@ -28,7 +28,7 @@ A **modern, web-based learning platform** designed for students and professional
 
 ![image](https://github.com/user-attachments/assets/81e3e701-2244-4633-a48a-ba1d216efb57)
 
-![image](https://github.com/user-attachments/assets/537cbfda-add5-4b19-8317-7ed58c35e6dd)
+![image](https://github.com/user-attachments/assets/5de7f445-a3d9-4915-b8b8-f249443e0825)
 
 ![image](https://github.com/user-attachments/assets/3def040e-aa09-41b4-a6ac-27e1e39c147e)
 
